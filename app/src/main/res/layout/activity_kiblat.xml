@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".KiblatActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/masjid_cantik"
+        android:alpha="0.75"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@drawable/circle_compas"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/imgArahKiblat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_navigation"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

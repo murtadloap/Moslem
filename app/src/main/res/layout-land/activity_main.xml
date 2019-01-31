@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blueSky"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/masjid_cantik"
+        android:alpha="0.75"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/moslemLogo"
+            android:layout_width="132dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/moslem_logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/moslemLogo"
+            android:layout_centerInParent="true">
+            <LinearLayout
+                android:id="@+id/kolom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btnQuran"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/btn_margin_vertical"
+                    android:background="@drawable/round"
+                    android:text="QURAN"
+                    android:textColor="@drawable/text"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnJadwalSholat"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:text="JADWAL SHOLAT"
+                    android:textColor="@drawable/text"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kolom2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/kolom1">
+                <Button
+                    android:id="@+id/btnArahKiblat"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="@dimen/btn_margin_vertical"
+                    android:background="@drawable/round"
+                    android:text="ARAH KIBLAT"
+                    android:textColor="@drawable/text"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnTasbih"
+                    android:layout_width="@dimen/button_size"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round"
+                    android:text="TASBIH"
+                    android:textColor="@drawable/text"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
